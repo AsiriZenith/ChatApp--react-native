@@ -14,26 +14,29 @@ const RegisterScreen = ({ params, navigation }) => {
                     <Row style={{ height: Layout.height * 0.2, alignItems: 'center', justifyContent: 'center' }}>
                         <Text style={{ fontSize: 15, marginTop: 60 }}>Register Here</Text>
                     </Row>
-                    <Row style={{ height: Layout.height * 0.5}}>
-                        <Form style={{ flex: 1, marginHorizontal: 15, justifyContent: 'space-evenly'}}>
-                            <Item rounded style={{ borderColor: color.MISCHKA }}>
-                                <Input placeholder='name'/>
+                    <Row style={{ height: Layout.height * 0.5 }}>
+                        <Form style={{ flex: 1, marginHorizontal: 20, justifyContent: 'space-evenly' }}>
+                            <Item rounded style={ styles.frm}>
+                                <Input placeholder='name' />
                             </Item>
-                            <Item rounded style={{ borderColor: color.MISCHKA }}>
-                                <Input placeholder='age'/>
+                            <Item rounded style={styles.frm}>
+                                <Input placeholder='age' />
                             </Item>
-                            <Item rounded style={{ borderColor: color.MISCHKA }}>
-                                <Input placeholder='gender'/>
+                            <Item rounded style={styles.frm}>
+                                <Input placeholder='gender' />
                             </Item>
-                            <Item rounded style={{ borderColor: color.MISCHKA }}>
-                                <Input placeholder='password'/>
+                            <Item rounded style={styles.frm}>
+                                <Input placeholder='email' />
                             </Item>
-                            <Item rounded style={{ borderColor: color.MISCHKA }}>
-                                <Input placeholder='Confirm password'/>
+                            <Item rounded style={styles.frm}>
+                                <Input placeholder='password' />
+                            </Item>
+                            <Item rounded style={styles.frm}>
+                                <Input placeholder='Confirm password' />
                             </Item>
                         </Form>
                     </Row >
-                    <Row style={{ height: Layout.height * 0.2, alignItems: 'center', justifyContent: 'center', paddingHorizontal:75 }}>
+                    <Row style={{ height: Layout.height * 0.2, alignItems: 'center', justifyContent: 'center', paddingHorizontal: 75 }}>
                         <Button style={{ borderRadius: 25, flex: 1, justifyContent: 'center' }}>
                             <Text style={{ color: color.white }}>Register</Text>
                         </Button>
@@ -55,4 +58,10 @@ const styles = {
         paddingHorizontal: 10,
         paddingTop: 20,
     },
+    frm: {
+        borderColor: color.MISCHKA,
+        outline:20,
+        margin:4.5,
+        padding: 0.5,
+    }
 };
